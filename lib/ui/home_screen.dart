@@ -61,7 +61,12 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Positioned(
                 top: 462.0,
-                child: RoundedButton(text: kDailyDealsBtnLabel),
+                child: RoundedButton(
+                  text: kDailyDealsBtnLabel,
+                  onPressed: () {
+                    print('see deals of the day clicked..');
+                  },
+                ),
               ),
             ],
           ),
